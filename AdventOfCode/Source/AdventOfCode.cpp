@@ -3,7 +3,7 @@
 
 // EDIT HERE! These lines will change what is executed
 #define CHALLENGE_TYPE CChallenge_01
-#define IS_FIRST_PART true
+#define IS_FIRST_PART false
 
 
 
@@ -18,5 +18,9 @@ int main()
     }
 
     challenge.CleanUp();
+
+    int stop;
+    std::cout << "Done" << std::endl;
+    std::cin >> stop;
     return static_cast<int>(errorCode);
 }

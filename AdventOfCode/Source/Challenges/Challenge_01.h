@@ -14,4 +14,11 @@ private:
     virtual EErrorCode CleanUp_SecondPart() override;
 
     static std::string const sm_inputFilePath;
+
+    EErrorCode InitiChallenge01();
+
+    int FindProductOfSumEntries(int _count, int _index = 0, int _sumValue = 0, int _productValue = 1) const;
+    int* m_InputElements = nullptr;
+    size_t m_InputElementsSize = 0;
+
 };
