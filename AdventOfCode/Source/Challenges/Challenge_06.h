@@ -2,7 +2,7 @@
 
 #include "Common/Challenge.h"
 
-class CChallenge_05 : public CChallenge
+class CChallenge_06 : public CChallenge
 {
 private:
     virtual EErrorCode SetUp_FirstPart() override;
@@ -13,5 +13,8 @@ private:
     virtual EErrorCode Run_SecondPart() override;
     virtual EErrorCode CleanUp_SecondPart() override;
 
+    void CreateSingleLineAnswers();
+
+    std::vector<std::string> m_SingleLineAnswers;
     static std::string const sm_inputFilePath;
 };
