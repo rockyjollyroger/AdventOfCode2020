@@ -14,4 +14,7 @@ private:
     virtual EErrorCode CleanUp_SecondPart() override;
 
     static std::string const sm_inputFilePath;
+
+    std::vector<long long> m_SortedJoltsList;
+    long long FindAdaptorCombinations(int _index = 0, long long _combSum = 0) const;
 };
