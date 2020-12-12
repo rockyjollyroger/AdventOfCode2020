@@ -17,10 +17,13 @@ EErrorCode CChallenge_10::SetUp_FirstPart()
     }
 
     std::vector<long long> linesIntList;
+
+    linesIntList.push_back(0); //Test the 0
     for (size_t i = 0; i < lines.size(); ++i)
     {
         linesIntList.push_back(atoi(lines[i].c_str()));
     }
+    linesIntList.push_back(linesIntList.back() + 3); // Adaptors build in jolt
 
     std::sort(linesIntList.begin(), linesIntList.end()); //sorts by lesser by default
     m_SortedJoltsList = linesIntList;
@@ -30,8 +33,8 @@ EErrorCode CChallenge_10::SetUp_FirstPart()
 
 EErrorCode CChallenge_10::Run_FirstPart()
 {
-    int joltLowestDiffCount = 1; //The 0 Jolt counts
-    int joltDiffHighestCount = 1; // to take into account the built in adapter
+    int joltLowestDiffCount = 0; //The 0 Jolt counts
+    int joltDiffHighestCount = 0; // to take into account the built in adapter
 
     long long currentJolt = 0;
 

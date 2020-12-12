@@ -2,7 +2,7 @@
 
 #include "Common/Challenge.h"
 
-class CChallenge_10 : public CChallenge
+class CChallenge_11 : public CChallenge
 {
 private:
     virtual EErrorCode SetUp_FirstPart() override;
@@ -14,6 +14,4 @@ private:
     virtual EErrorCode CleanUp_SecondPart() override;
 
     static std::string const sm_inputFilePath;
-
-    std::vector<long long> m_SortedJoltsList;
 };
